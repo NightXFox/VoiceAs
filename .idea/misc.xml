@@ -4,8 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/kk/MA/VoiceAssistant/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/kk/MA/VoiceAssistant/app/src/main/res/layout/assistant_message.xml" value="0.33" />
-        <entry key="..\:/kk/MA/VoiceAssistant/app/src/main/res/layout/user_message.xml" value="0.67" />
+        <entry key="..\:/kk/MA/VoiceAssistant/app/src/main/res/layout/assistant_message.xml" value="0.5" />
+        <entry key="..\:/kk/MA/VoiceAssistant/app/src/main/res/layout/user_message.xml" value="0.2" />
       </map>
     </option>
   </component>

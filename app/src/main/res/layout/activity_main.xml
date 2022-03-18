@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/chatWindow"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatMessageList"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/chatWindowLayoutHeight"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/chatWindowLayoutMargin"
+        android:layout_marginBottom="@dimen/chatWindowLayoutMargin"
         android:layout_marginStart="@dimen/chatWindowLayoutMargin"
         android:layout_marginEnd="@dimen/chatWindowLayoutMargin"
         android:gravity="bottom"

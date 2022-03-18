@@ -26,16 +26,19 @@
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/userBubble"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
         tools:layout_editor_absoluteY="14dp" />
 
     <TextView
         android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Вы"
         android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/messageTextView"
-        app:layout_constraintEnd_toEndOf="@+id/messageTextView" />
+        app:layout_constraintEnd_toEndOf="@+id/messageTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
 
     <TextView
         android:id="@+id/messageDateView"
