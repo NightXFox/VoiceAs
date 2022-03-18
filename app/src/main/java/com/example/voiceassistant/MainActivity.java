@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.example.voiceassistant.model.Message;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,18 +57,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-//        String[] allMessages = chatWindow.getText().toString().split("\n");
-//        outState.putStringArray("messageArray", allMessages);
+        ArrayList<Message> allMessages = new ArrayList<Message>(messageListAdapter.messageList);
+        outState.putParcelableArrayList("messageArrayList", allMessages);
         super.onSaveInstanceState(outState);
     }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-//        String[] savedMessages = savedInstanceState.getStringArray("messageArray");
-//        for (String message : savedMessages) {
-//            chatWindow.append(message + "\n");
-//        }
+        ArrayList<Message> allMessages = savedInstanceState.getParcelableArrayList("messageArrayList");
+        messageListAdapter.messageList = new ArrayList<Message>(allMessages);
+        messageListAdapter.notifyDataSetChanged();
+        chatMessageList.scrollToPosition(messageListAdapter.messageList.size()-1);
     }
 
 
