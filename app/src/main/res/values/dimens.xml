@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chatWindowLayoutHeight">0dp</dimen>
+    <dimen name="chatWindowLayoutMargin">8dp</dimen>
+    <dimen name="chatWindowTextSize">20sp</dimen>
+    <dimen name="linearLayoutMargin">8dp</dimen>
+</resources>
